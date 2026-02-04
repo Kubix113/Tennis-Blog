@@ -1,0 +1,174 @@
+/* =========================================
+   1. FUNDAMENTY
+   ========================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+    color: #1D1716;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+/* =========================================
+   2. NAGŁÓWEK
+   ========================================= */
+.page-header {
+    padding: 40px 25px 30px 25px;
+    background-color: #1D1716;
+    color: #ffffff;
+}
+
+.page-header__back {
+    color: #F3BC77;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.page-header__title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 15px 0 5px 0;
+    text-transform: uppercase;
+}
+
+.page-header__subtitle {
+    font-size: 13px;
+    color: #F3BC77;
+    margin: 0;
+}
+
+/* =========================================
+   3. SEKCJE (BEM: slam-section)
+   ========================================= */
+.slam-section {
+    padding: 30px 25px;
+}
+
+.slam-section__title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F3BC77;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.slam-section__text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Karty Turniejów (BEM: slam-card) */
+.slam-card {
+    margin-bottom: 25px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.slam-card__header {
+    padding: 20px;
+    color: #fff;
+}
+
+/* Modifiers dla nawierzchni */
+.slam-card--hard-blue .slam-card__header { background-color: #003399; }
+.slam-card--clay .slam-card__header { background-color: #D35400; }
+.slam-card--grass .slam-card__header { background-color: #1E8449; }
+.slam-card--hard-deco .slam-card__header { background-color: #2E4053; }
+
+.slam-card__date {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.slam-card__name {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+}
+
+.slam-card__body {
+    padding: 20px;
+    background: #fff;
+}
+
+.slam-card__desc {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.slam-card__meta {
+    font-size: 11px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Tabela Statystyk (BEM: stat-table) */
+.stat-table {
+    background: #1D1716;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.stat-table__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 14px;
+}
+
+.stat-table__row--gold {
+    background-color: rgba(243, 188, 119, 0.15);
+    color: #F3BC77;
+}
+
+.slam-section__note {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* =========================================
+   4. STOPKA
+   ========================================= */
+.footer {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    background-color: #1D1716;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer__text {
+    color: #F3BC77;
+    font-size: 10px;
+    font-weight: 700;
+}

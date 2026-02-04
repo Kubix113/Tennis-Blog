@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiadomości z kortu - TennisBlog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/Blog.css">
+</head>
+<body>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <a href="../../Menu.html" class="page-header__back">
+                &larr; Menu główne
+            </a>
+            <h1 class="page-header__title">Wiadomości z kortu</h1>
+        </header>
+
+        <section class="blog-feed">
+
+            <article class="post-card">
+                <div class="post-card__image-container">
+                    <img src="Images/Iga.png" alt="Tenisistka" class="post-card__image">
+                </div>
+                <div class="post-card__content">
+                    <span class="post-card__meta">28 Stycznia 2026</span>
+                    <h2 class="post-card__title">Iga Świątek dominuje w finale</h2>
+                    <p class="post-card__excerpt">
+                        Niesamowity mecz Polki. Rywalka nie miała szans w drugim secie.
+                    </p>
+
+                    <div class="post-card__details">
+                        <div class="post-card__full-text">
+                            <p>To był pokaz siły. Świątek weszła na kort zdeterminowana i od pierwszych piłek narzuciła swoje tempo. Backhand po linii funkcjonował bez zarzutu, a serwis był niezwykle skuteczny (75% pierwszego podania).</p>
+                            <p>W wywiadzie pomeczowym przyznała, że kluczem była koncentracja i nowa strategia treningowa wprowadzona w przerwie zimowej.</p>
+                        </div>
+                    </div>
+
+                    <button class="post-card__toggle-btn">CZYTAJ WIĘCEJ</button>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__image-container">
+                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Rekord+Novaka" alt="Tenisista" class="post-card__image">
+                </div>
+                <div class="post-card__content">
+                    <span class="post-card__meta">25 Stycznia 2026</span>
+                    <h2 class="post-card__title">Nowy rekord Djokovica</h2>
+                    <p class="post-card__excerpt">
+                        Serbski mistrz po raz kolejny przechodzi do historii tenisa.
+                    </p>
+
+                    <div class="post-card__details">
+                        <div class="post-card__full-text">
+                            <p>Wczorajsze zwycięstwo oznacza, że Novak Djokovic spędził łącznie 450 tygodni na pozycji lidera rankingu ATP. To wynik, który jeszcze dekadę temu wydawał się niemożliwy do osiągnięcia.</p>
+                            <p>Eksperci są zgodni – jego przygotowanie fizyczne w wieku 38 lat jest wciąż na najwyższym światowym poziomie.</p>
+                        </div>
+                    </div>
+
+                    <button class="post-card__toggle-btn">CZYTAJ WIĘCEJ</button>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__image-container">
+                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Sprzet+2026" alt="Rakiety" class="post-card__image">
+                </div>
+                <div class="post-card__content">
+                    <span class="post-card__meta">20 Stycznia 2026</span>
+                    <h2 class="post-card__title">Nowinki sprzętowe na 2026</h2>
+                    <p class="post-card__excerpt">
+                        Przegląd najnowszych rakiet. Co zmieniło się w technologii?
+                    </p>
+
+                    <div class="post-card__details">
+                        <div class="post-card__full-text">
+                            <p>W tym sezonie producenci stawiają na kontrolę i czucie piłki. Nowa seria rakiet wykorzystuje materiały grafenowe nowej generacji, które lepiej tłumią drgania.</p>
+                            <p>Testowaliśmy modele Head, Wilson i Babolat. Pełny raport z testów znajdziecie w naszej sekcji premium.</p>
+                        </div>
+                    </div>
+
+                    <button class="post-card__toggle-btn">CZYTAJ WIĘCEJ</button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 TennisBlog</p>
+    </footer>
+
+    <script>
+        // Pobieramy wszystkie przyciski
+        const buttons = document.querySelectorAll('.post-card__toggle-btn');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Znajdź kartę (rodzica przycisku)
+                const card = button.closest('.post-card');
+                
+                // Przełącz klasę 'open'
+                card.classList.toggle('open');
+                
+                // Zmień tekst przycisku
+                if (card.classList.contains('open')) {
+                    button.innerText = "ZWIŃ";
+                } else {
+                    button.innerText = "CZYTAJ WIĘCEJ";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
