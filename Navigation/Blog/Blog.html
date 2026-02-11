@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiadomości z kortu - TennisBlog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/Blog.css">
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SCMLN7DCS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7SCMLN7DCS');
+</script>
+
 <body>
 
     <main class="main-content">
@@ -33,8 +47,11 @@
 
                     <div class="post-card__details">
                         <div class="post-card__full-text">
-                            <p>To był pokaz siły. Świątek weszła na kort zdeterminowana i od pierwszych piłek narzuciła swoje tempo. Backhand po linii funkcjonował bez zarzutu, a serwis był niezwykle skuteczny (75% pierwszego podania).</p>
-                            <p>W wywiadzie pomeczowym przyznała, że kluczem była koncentracja i nowa strategia treningowa wprowadzona w przerwie zimowej.</p>
+                            <p>To był pokaz siły. Świątek weszła na kort zdeterminowana i od pierwszych piłek narzuciła
+                                swoje tempo. Backhand po linii funkcjonował bez zarzutu, a serwis był niezwykle
+                                skuteczny (75% pierwszego podania).</p>
+                            <p>W wywiadzie pomeczowym przyznała, że kluczem była koncentracja i nowa strategia
+                                treningowa wprowadzona w przerwie zimowej.</p>
                         </div>
                     </div>
 
@@ -44,7 +61,8 @@
 
             <article class="post-card">
                 <div class="post-card__image-container">
-                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Rekord+Novaka" alt="Tenisista" class="post-card__image">
+                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Rekord+Novaka" alt="Tenisista"
+                        class="post-card__image">
                 </div>
                 <div class="post-card__content">
                     <span class="post-card__meta">25 Stycznia 2026</span>
@@ -55,8 +73,11 @@
 
                     <div class="post-card__details">
                         <div class="post-card__full-text">
-                            <p>Wczorajsze zwycięstwo oznacza, że Novak Djokovic spędził łącznie 450 tygodni na pozycji lidera rankingu ATP. To wynik, który jeszcze dekadę temu wydawał się niemożliwy do osiągnięcia.</p>
-                            <p>Eksperci są zgodni – jego przygotowanie fizyczne w wieku 38 lat jest wciąż na najwyższym światowym poziomie.</p>
+                            <p>Wczorajsze zwycięstwo oznacza, że Novak Djokovic spędził łącznie 450 tygodni na pozycji
+                                lidera rankingu ATP. To wynik, który jeszcze dekadę temu wydawał się niemożliwy do
+                                osiągnięcia.</p>
+                            <p>Eksperci są zgodni – jego przygotowanie fizyczne w wieku 38 lat jest wciąż na najwyższym
+                                światowym poziomie.</p>
                         </div>
                     </div>
 
@@ -66,7 +87,8 @@
 
             <article class="post-card">
                 <div class="post-card__image-container">
-                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Sprzet+2026" alt="Rakiety" class="post-card__image">
+                    <img src="https://placehold.co/600x400/e0e0e0/888888?text=Sprzet+2026" alt="Rakiety"
+                        class="post-card__image">
                 </div>
                 <div class="post-card__content">
                     <span class="post-card__meta">20 Stycznia 2026</span>
@@ -77,8 +99,10 @@
 
                     <div class="post-card__details">
                         <div class="post-card__full-text">
-                            <p>W tym sezonie producenci stawiają na kontrolę i czucie piłki. Nowa seria rakiet wykorzystuje materiały grafenowe nowej generacji, które lepiej tłumią drgania.</p>
-                            <p>Testowaliśmy modele Head, Wilson i Babolat. Pełny raport z testów znajdziecie w naszej sekcji premium.</p>
+                            <p>W tym sezonie producenci stawiają na kontrolę i czucie piłki. Nowa seria rakiet
+                                wykorzystuje materiały grafenowe nowej generacji, które lepiej tłumią drgania.</p>
+                            <p>Testowaliśmy modele Head, Wilson i Babolat. Pełny raport z testów znajdziecie w naszej
+                                sekcji premium.</p>
                         </div>
                     </div>
 
@@ -102,10 +126,10 @@
             button.addEventListener('click', () => {
                 // Znajdź kartę (rodzica przycisku)
                 const card = button.closest('.post-card');
-                
+
                 // Przełącz klasę 'open'
                 card.classList.toggle('open');
-                
+
                 // Zmień tekst przycisku
                 if (card.classList.contains('open')) {
                     button.innerText = "ZWIŃ";
@@ -117,4 +141,5 @@
     </script>
 
 </body>
+
 </html>
